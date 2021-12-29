@@ -25,7 +25,7 @@ Preys perform the role of middle-class in the foodchain pyramid. They can move a
 
 When a creature reproduces, mutation happens with probability of 0.1. When mutation happens, mutation function is performed for all five traits (movement speed, scanning period, rotation speed, width, height). The mutation function takes the range of a trait value and a mutation strength value, and outputs a new trait value. The new trait value follows a normal distribution centered at the original trait value, and its variance is determined by the mutaion strength value.
 
-![Initial state](images/initial state.PNG "Initial state")
+![Initial state](images/initial state.PNG)
 
 ![Converged state](images/converged state.PNG "Converged state")
 
