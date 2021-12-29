@@ -27,7 +27,32 @@ Preys perform the role of middle-class in the foodchain pyramid. They can move a
 
 When a creature reproduces, mutation happens with probability of 0.1. When mutation happens, mutation function is performed for all five traits (movement speed, scanning period, rotation speed, width, height). The mutation function takes the range of a trait value and a mutation strength value, and outputs a new trait value. The new trait value follows a normal distribution centered at the original trait value, and its variance is determined by the mutaion strength value.
 
+* * *
+
+## Simulation summary
+
+All creatures start with the same traits. Predators have slightly higher movement speed and rotation speed. 
+
 ![Initial state](images/initial_state.PNG)
+
+As mutation progresses, both the preys and the predators evolved to have less area in order to reduce energy consumption rate. It is noticable that the creatures evolved to have wider width (horizontally long). The reason for this seems to be to sweep larger area, and thus have larger chance of capturing its food. Other traits such as movement speed, scanning period, rotation speed have reached its maximum.
 
 ![Converged state](images/converged_state.PNG)
 
+### Graphs under different conditions
+
+With mutation enabled, the number of creatures tend to resemble the [alternating predator-prey graph][https://en.wikipedia.org/wiki/Lotka%E2%80%93Volterra_equations], and as evolution converges, its amplitude and average number of creatures converges too. The following graph shows the number of creatures(vertical axis) as time passes(horizontal axis). The blue line represents the number of prey, and red for predator.
+
+![Mutation_normal](images/mutataion_normal.PNG)
+
+The following graph shows the situation with less mutation rate. The time the evolutaion takes to converge is significantly longer, compared to the upper graph.
+
+![Mutation_low_chance](images/mutation_low_chance.PNG)
+
+The following graph shows the situation with no mutation. Without mutation, the prey cannot survive the minima point, due to the initial superity of predator. Soon after the extinction of the prey, the predator also disappears.
+
+![No_mutataion](images/no_mutation.PNG)
+
+The following graph shows the situation when new, strong predator species is introduced to the system.
+
+![Introduced_species](images/introduced_species.PNG)
