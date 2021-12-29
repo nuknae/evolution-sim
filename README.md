@@ -11,7 +11,7 @@ Preys perform the role of middle-class in the foodchain pyramid. They can move a
 ## Creature behavior
 
 1. Energy: Each creature has its own energy. The enery of a creature decreases constantly, and the decrease rate is proportional to the square root of the area of the creature. When energy is reduced to 0, the creature dies. Both the prey and the predator gains 1 energy each time it consumes its food.
-2. Scanning:: A creature scans  the nearby environment periodically. If its food is within the scan area, the creature steers itself to the nearest food. The prey priorities survival, so if a predator is within the scan area, it steers to the opposite direction of the predator.
+2. Scanning: A creature scans  the nearby environment periodically. If its food is within the scan area, the creature steers itself to the nearest food. The prey priorities survival, so if a predator is within the scan area, it steers to the opposite direction of the predator.
 3. Reproduction: When a creature has enough energy to spare, it performs dichotomy to reproduce. 
 
 ## Creature traits
@@ -24,6 +24,8 @@ Preys perform the role of middle-class in the foodchain pyramid. They can move a
 ## Mutation rules
 
 When a creature reproduces, mutation happens with probability of 0.1. When mutation happens, mutation function is performed for all five traits (movement speed, scanning period, rotation speed, width, height). The mutation function takes the range of a trait value and a mutation strength value, and outputs a new trait value. The new trait value follows a normal distribution centered at the original trait value, and its variance is determined by the mutaion strength value.
+
 ![Initial state](images/initial state.PNG "Initial state")
+
 ![Converged state](images/converged state.PNG "Converged state")
 
