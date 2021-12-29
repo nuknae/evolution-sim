@@ -2,6 +2,8 @@
 
 This project involves a simulator for a  simple ecosystem with mutations, and some testing records. We can that with some simple rules, the simulated system resembles some features of the real natural ecosystem. (and  just watching the creatures moving around is fun too)
 
+![Project_example](images/project_example.PNG)
+
 ## Ecosystem rules
 
 The evolution simulator runs a simple ecosystem composed of three levels of food chain.  The stationary resource (green), prey (blue), and predator (red). The prey and predator are  those that perform life activities, while the stationary resource performs the role of constant enery input to the system (for example, sunlight). We will call both prey and the predator "creatures".
@@ -27,5 +29,5 @@ When a creature reproduces, mutation happens with probability of 0.1. When mutat
 
 ![Initial state](images/initial_state.PNG)
 
-![Converged state](images/converged_state.PNG "Converged state")
+![Converged state](images/converged_state.PNG)
 
