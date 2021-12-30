@@ -18,20 +18,22 @@ Preys perform the role of middle-class in the food chain pyramid. They can move 
 
 ## Creature behavior rules
 
-**1. Energy**: Each creature has its own energy. The energy of a creature decreases constantly, and the decrease rate is proportional to the square root of the area of the creature. When energy is reduced to 0, the creature dies. Both the prey and the predator gains 1 energy each time it consumes its food.
-**2. Scanning**: A creature scans  the nearby environment periodically. If its food is within the scan area, the creature steers itself to the nearest food. The prey priorities survival, so if a predator is within the scan area, it steers to the opposite direction of the predator.
+**1. Energy**: Each creature has its own energy. The energy of a creature decreases constantly, and the decrease rate is proportional to the square root of the area of the creature. When energy is reduced to 0, the creature dies. Both the prey and the predator gains 1 energy each time it consumes its food.  
+**2. Scanning**: A creature scans  the nearby environment periodically. If its food is within the scan area, the creature steers itself to the nearest food. The prey priorities survival, so if a predator is within the scan area, it steers to the opposite direction of the predator.  
 **3. Reproduction**: When a creature has enough energy to spare, it performs dichotomy to reproduce. 
 
 ## Creature traits
 
-**1. Movement speed**: The moving speed of a creature.
-**2. Scanning period**: The time interval between performing a new scan.
-**3. Rotation speed**: The steering speed of a creature.
+**1. Movement speed**: The moving speed of a creature.  
+**2. Scanning period**: The time interval between performing a new scan.  
+**3. Rotation speed**: The steering speed of a creature.  
 **4. Width, Height**: The width and height of a creature. Their product is the area of the creature, which determines the energy efficiency.
 
 ## Mutation rules
 
-When a creature reproduces, mutation happens with probability of 0.1. When mutation happens, mutation function is performed for all five traits (movement speed, scanning period, rotation speed, width, height). The mutation function takes the range of a trait value and a mutation strength value, and outputs a new trait value. The new trait value follows a normal distribution centered at the original trait value, and its variance is determined by the mutation strength value.
+When a creature reproduces, mutation happens with probability of 0.1. When mutation happens, mutation function is performed for all five traits (movement speed, scanning period, rotation speed, width, height).  
+
+The mutation function takes the range of a trait value and a mutation strength value, and outputs a new trait value. The new trait value follows a normal distribution centered at the original trait value, and its variance is determined by the mutation strength value.
 
 * * *
 
@@ -53,7 +55,7 @@ With mutation enabled, the number of creatures tend to resemble the [alternating
 
 The following graph shows the situation with less mutation rate. The time the evolution takes to converge is significantly longer, compared to the upper graph.
 
-![Mutation_low_chance](images/mutation_low_chance.png
+![Mutation_low_chance](images/mutation_low_chance.png)
 
 The following graph shows the situation with no mutation. Without mutation, the prey cannot survive the minimum point, due to the initial superiority of predator. Soon after the extinction of the prey, the predator also disappears.
 
