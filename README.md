@@ -1,4 +1,4 @@
-# Evolution-sim
+# Evolution-simulator
 
 This project involves a simulator for a  simple 2-D ecosystem with mutations, and some testing records. We can see that with some simple rules, the simulated system resembles some features of the real natural ecosystem. (and  just watching the creatures moving around is fun too)
 
@@ -49,7 +49,7 @@ As mutation progresses, both the preys and the predators evolved to have less ar
 
 With mutation enabled, the number of creatures tend to resemble the [alternating predator-prey graph][https://en.wikipedia.org/wiki/Lotka%E2%80%93Volterra_equations], and as evolution converges, its amplitude and average number of creatures converges too. The following graph shows the number of creatures(vertical axis) as time passes(horizontal axis). The blue line represents the number of prey, and red for predator.
 
-![Mutation_normal](images/mutataion_normal.png)
+![Mutation_normal](images/mutation_normal.png)
 
 The following graph shows the situation with less mutation rate. The time the evolution takes to converge is significantly longer, compared to the upper graph.
 
