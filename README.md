@@ -49,7 +49,7 @@ As mutation progresses, both the preys and the predators evolved to have less ar
 
 ### Graphs under different conditions
 
-With mutation enabled, the number of creatures tend to resemble the [alternating predator-prey graph][https://en.wikipedia.org/wiki/Lotka%E2%80%93Volterra_equations], and as evolution converges, its amplitude and average number of creatures converges too. The following graph shows the number of creatures(vertical axis) as time passes(horizontal axis). The blue line represents the number of prey, and red for predator.
+With mutation enabled, the number of creatures tend to resemble the [alternating predator-prey graph](https://en.wikipedia.org/wiki/Lotka%E2%80%93Volterra_equations), and as evolution converges, its amplitude and average number of creatures converges too. The following graph shows the number of creatures(vertical axis) as time passes(horizontal axis). The blue line represents the number of prey, and red for predator.
 
 ![Mutation_normal](images/mutation_normal.png)
 
