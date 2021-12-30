@@ -1,6 +1,6 @@
 # Evolution-simulator
 
-This project involves a simulator for a  simple 2-D ecosystem with mutations, and some testing records. We can see that with some simple rules, the simulated system resembles some features of the real natural ecosystem. (and  just watching the creatures moving around is fun too)
+This project consists of a simulator for a  simple 2-D ecosystem with mutations, and some simulation records. We can see that with some simple rules, the simulated system resembles some features of the real natural ecosystem. (and  just watching the creatures moving around is fun too)
 
 ![sim_zoom_in](images/sim_zoom_in.gif)
 
